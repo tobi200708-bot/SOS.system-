@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency SOS System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">🚨 Emergency SOS</div>
+
+    <button id="menuToggle" class="menu-btn">☰</button>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#how">How It Works</a>
+        <a href="#contact">Emergency Contact</a>
+    </nav>
+</header>
+
+
+<main>
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="tag">EMERGENCY RESPONSE SYSTEM</p>
+
+        <h1>Emergency SOS System</h1>
+
+        <p>
+            Quickly send your emergency alert and current location
+            to your emergency contact.
+        </p>
+
+        <button id="sosButton" class="sos-button">
+            🚨 SOS
+        </button>
+
+        <p id="statusMessage" class="status">
+            System Ready
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="how" class="section">
+
+    <h2>How It Works</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>1. Activate</h3>
+            <p>Press the SOS button during an emergency.</p>
+        </div>
+
+        <div class="card">
+            <h3>2. Location</h3>
+            <p>Your GPS location is detected.</p>
+        </div>
+
+        <div class="card">
+            <h3>3. Alert</h3>
+            <p>The emergency alert is saved in Firebase.</p>
+        </div>
+
+        <div class="card">
+            <h3>4. SMS</h3>
+            <p>Your phone SMS app opens with the emergency message.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="contact" class="section contact">
+
+    <h2>Emergency Contact</h2>
+
+    <label for="phoneNumber">
+        Emergency Contact Number
+    </label>
+
+    <input
+        type="tel"
+        id="phoneNumber"
+        placeholder="+919876543210"
+    >
+
+    <p class="small">
+        Enter the number with country code.
+    </p>
+
+</section>
+
+</main>
+
+
+<!-- SOS CONFIRMATION MODAL -->
+
+<div id="sosModal" class="modal">
+
+    <div class="modal-box">
+
+        <h2>🚨 Emergency SOS</h2>
+
+        <p>
+            Are you sure you want to send an emergency alert?
+        </p>
+
+        <div class="modal-buttons">
+
+            <button id="confirmSOS" class="confirm">
+                YES, SEND SOS
+            </button>
+
+            <button id="cancelSOS" class="cancel">
+                CANCEL
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="script.js"></script>
+
+</body>
+</html>

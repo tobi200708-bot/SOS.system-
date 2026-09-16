@@ -21,7 +21,7 @@ app.post("/send-sos", async (req, res) => {
 `🚨 EMERGENCY SOS ALERT 🚨
 
 Emergency help may be required.
-
+automatic send sms 
 Location:
 https://maps.google.com/?q=${latitude},${longitude}`,
 

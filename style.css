@@ -1,0 +1,230 @@
+/* ========================================
+   EMERGENCY SOS SYSTEM - STYLE
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #070b14;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+header {
+    text-align: center;
+    padding: 35px 20px;
+    background: #0d1322;
+    border-bottom: 2px solid #ff3347;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #ff3347;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #b8c0d0;
+    font-size: 15px;
+}
+
+
+/* ========================================
+   MAIN
+======================================== */
+
+main {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+
+/* ========================================
+   CARD
+======================================== */
+
+.card {
+    background: #101827;
+    border: 1px solid #263248;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   INPUT
+======================================== */
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 14px;
+
+    background: #070b14;
+    color: #ffffff;
+
+    border: 1px solid #344158;
+    border-radius: 10px;
+
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #ff3347;
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+button {
+    width: 100%;
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #ff3347;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e52236;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+/* ========================================
+   ACCIDENT BUTTON
+======================================== */
+
+.accident-card {
+    text-align: center;
+}
+
+#accidentButton {
+    margin-top: 15px;
+    background: #c90018;
+    font-size: 17px;
+    padding: 18px;
+}
+
+#accidentButton:hover {
+    background: #ff001f;
+}
+
+
+/* ========================================
+   STATUS
+======================================== */
+
+#contactStatus,
+#locationStatus,
+#statusMessage,
+#systemStatus {
+    margin-top: 15px;
+    color: #b8c0d0;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   EMERGENCY STATUS
+======================================== */
+
+#statusMessage {
+    padding: 15px;
+    background: #070b14;
+    border-radius: 10px;
+    border-left: 4px solid #ff3347;
+}
+
+
+/* ========================================
+   SUCCESS MESSAGE
+======================================== */
+
+.success {
+    color: #4ade80 !important;
+}
+
+
+/* ========================================
+   ERROR MESSAGE
+======================================== */
+
+.error {
+    color: #ff5c6c !important;
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVE
+======================================== */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 13px;
+    }
+
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card h2 {
+        font-size: 19px;
+    }
+
+    input {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+}

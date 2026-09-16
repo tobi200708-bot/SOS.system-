@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency SOS System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🚨 Emergency SOS</h1>
+    <p>Cloud Based Emergency Response System</p>
+</header>
+
+<main>
+
+    <!-- SAVE CONTACT -->
+    <section class="card">
+        <h2>📞 Emergency Contact</h2>
+
+        <input
+            type="text"
+            id="contactName"
+            placeholder="Contact Name"
+        >
+
+        <input
+            type="tel"
+            id="contactPhone"
+            placeholder="Contact Number"
+        >
+
+        <button id="saveContactButton">
+            Save Contact
+        </button>
+
+        <p id="contactStatus"></p>
+    </section>
+
+
+    <!-- ACCIDENT ALERT -->
+    <section class="card accident-card">
+
+        <h2>🚗 Accident Detection</h2>
+
+        <p id="systemStatus">
+            System Ready
+        </p>
+
+        <button id="accidentButton">
+            🚨 SIMULATE ACCIDENT
+        </button>
+
+        <p id="locationStatus"></p>
+
+    </section>
+
+
+    <!-- RESULT -->
+    <section class="card">
+
+        <h2>📢 Emergency Status</h2>
+
+        <p id="statusMessage">
+            No emergency detected.
+        </p>
+
+    </section>
+
+</main>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
